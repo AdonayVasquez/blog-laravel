@@ -92,9 +92,9 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+          <span>Inicio</span>
         </a>
       </li>
       <li class="nav-item dropdown">
@@ -123,7 +123,20 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/posts">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Postsss</span></a>
+      </li>
 
+      <li  data-toggle="collapse" data-target="#products"  class="nav-item collapsed">
+        <a href="#"><i class="fa fa-film nav-link">Articulos</i><span class="arrow">  </span></a>
+      </li>
+      <ul class="sub-menu collapse" id="products">
+          <li class="active"><a href="/posts" class="nav-link">Listar articulos</a></li>
+          <li><a href="{{ url('/posts/create') }}">Nuevo articulo</a></li>
+          <li><a href="/sinversus">Prueba</a></li>
+      </ul>
     </ul>
 
     <div id="content-wrapper">

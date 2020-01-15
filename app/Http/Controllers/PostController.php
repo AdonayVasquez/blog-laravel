@@ -56,7 +56,7 @@ class PostController extends Controller
         //return redirect()->route('admin.posts.formpost');
 
         //dd($request->all());
-        return 'asdasd';
+        return view('admin.index');
     }
 
     /**
